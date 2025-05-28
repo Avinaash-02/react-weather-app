@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inconsolata:wght@600&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:wght@100;500&family=Outfit:wght@100..900&family=Poppins:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cormorant ', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-size: 8rem;
+    color: white;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    max-width: 700px;
+    height: 700px;
+    margin: auto;
+    padding: 0 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: -10%;
+}
+
+.app:before {
+    content: '';
+    background: url('./assets/mountains-river-reflection-aesthetic-evening-dusk-5k-3840x2160-529.jpeg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.app .top {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.app .description {
+    position: relative;
+    right: -90%;
+    transform-origin: 0 0;
+    transform: rotate(269deg);
+}
+
+.app .search {
+    text-align: center;
+    padding: 1rem;
+}
+
+.app input {
+    border-radius: 50px;
+    padding: .7rem 1.5rem;
+    font-size: 1.2rem;
+    border: 0.1px solid rgba(255, 255, 255, 0, 1);
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    left: 40%;
+}
+
+::placeholder {
+    color: white;
+}
+
+.app .bottom {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.app .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 2rem auto 0;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    gap: 1rem;
+}
+
+.app .bottom div {
+    flex: 1;
+    padding: 0.5rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.app .bottom div:last-child {
+    border-right: none;
+}
